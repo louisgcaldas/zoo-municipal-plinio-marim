@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoológico Municipal Plínio Marim - Início</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="../imagens\logos\logo-zoo-branco.png" alt="logo zoologico" id="logo-zoo">
+
+        <h1 id="titulo-zoo">Zoológico Municipal Plínio Marim</h1>
+    </header>
+
+    <main>
+        <br>
+        <section class="introducao">
+            <h2>O Zoológico</h2>
+            <p>
+                O <strong>Zoológico Municipal Plínio Marim</strong> é um dos principais refúgios de lazer e biodiversidade em Votuporanga, 
+                projetado para conectar a comunidade à riqueza da vida selvagem de forma educativa e acolhedor. O espaço encanta 
+                visitantes de todas as idades ao abrigar uma impressionante variedade de espécies, permitindo a observação de perto desde a imponência do leão e a magnitude do elefante, até o mistério do jacaré e a agilidade do avestruz. O grande diferencial do
+                parque fica por conta do exótico axolote, uma criatura fascinante que desperta a curiosidade de cientistas e crianças, consolidando o zoo como um centro de preservação, aprendizado e conscientização ambiental.
+            </p>
+        </section>
+
+        <br><br>
+
+        <section class="animais">
+            <h2>Conheça nossos animais</h2>
+
+            <div class="card-animal">
+                <h3>Leão-asiático</h3>
+                <p><strong>Nome:</strong> Jeferson Marin | <strong>Idade:</strong> 15 anos</p>
+                <button id="botao-leao" onclick="mostrarInfo('leao')">Ver Informações</button>
+
+                <div id="info-leao" class="detalhes" hidden>
+                    <div class="infoAnimal">
+                        <div class="infoBio">
+                            <strong>Reino: </strong>Animalia&emsp;&emsp;&emsp;<strong>Filo: </strong>Chordata&emsp;&emsp;&emsp;
+                            <strong>Classe: </strong>Mammalia<br><strong>Ordem: </strong>Carnivora&emsp;&emsp;&emsp;
+                            <strong>Família: </strong>Felidae&emsp;&emsp;&emsp;<strong>Gênero: </strong>Panthera<br>
+                            <strong>Espécie / subespécie: </strong>Panthera leo persica
+                        </div>
+
+                        <br>
+
+                        <p>
+                            <strong>Sexo: </strong>Masculino<br>
+                            <strong>Tempo no Zoo: </strong>5 anos<br>
+                            <strong>Status de Conservação: </strong>Em Perigo (EN)<br><br>
+                            <img src="../imagens/lista-vermelha/lista-vermelha-iucn-en.webp" alt="status de conservação"><br><br>
+                            <strong>Habitat natural: </strong>Floresta de Gir, Gujarat (Índia)
+                        </p>
+                    </div>
+
+                    <div class="fotoAnimal">
+                        <img src="../imagens/animais/jefferson-marin.webp" alt="Foto Leão-asiático"> Jefferson Marin descansando
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-animal">
+                <h3>Elefante-pigmeu-de-Bornéu</h3>
+                <p><strong>Nome:</strong> Roberto | <strong>Idade:</strong> 13 anos</p>
+                <button id="botao-elefante" onclick="mostrarInfo('elefante')">Ver Informações</button>
+
+                <div id="info-elefante" class="detalhes" hidden>
+                    <div class="infoAnimal">
+                        <div class="infoBio">
+                            <strong>Reino: </strong>Animalia&emsp;&emsp;&emsp;<strong>Filo: </strong>Chordata&emsp;&emsp;&emsp;
+                            <strong>Classe: </strong>Mammalia<br><strong>Ordem: </strong>Proboscidea&emsp;&emsp;&emsp;
+                            <strong>Família: </strong>Elephantidae&emsp;&emsp;&emsp;<strong>Gênero: </strong>Elephas<br>
+                            <strong>Espécie / subespécie: </strong>Elephas maximus borneensis
+                        </div>
+
+                        <br>
+
+                        <p>
+                            <strong>Sexo: </strong>Masculino<br>
+                            <strong>Tempo no Zoo: </strong>10 anos<br>
+                            <strong>Status de Conservação: </strong>Em Perigo (EN)<br><br>
+                            <img src="../imagens/lista-vermelha/lista-vermelha-iucn-en.webp" alt="status de conservação"><br><br>
+                            <strong>Habitat natural: </strong>Nordeste de Bornéu (Malásia e Indonésia)
+                        </p>
+                    </div>
+
+                    <div class="fotoAnimal">
+                        <img src="../imagens/animais/roberto.webp" alt="Foto Elefante-pigmeu-de-Bornéu">Roberto explorando seu espaço
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-animal">
+                <h3>Jacaré-coroa</h3>
+                <p><strong>Nome: </strong>Jacazé | <strong>Idade: </strong>18 anos</p>
+                <button id="botao-jacare-coroa" onclick="mostrarInfo('jacare-coroa')">Ver Informações</button>
+
+                <div id="info-jacare-coroa" class="detalhes" hidden>
+                    <div class="infoAnimal">
+                        <div class="infoBio">
+                            <strong>Reino: </strong>Animalia&emsp;&emsp;&emsp;<strong>Filo: </strong>Chordata&emsp;&emsp;&emsp;
+                            <strong>Classe: </strong>Reptilia<br><strong>Ordem: </strong>Crocodylia&emsp;&emsp;&emsp;
+                            <strong>Família: </strong>Alligatoridae&emsp;&emsp;&emsp;<strong>Gênero: </strong>Paleosuchus<br>
+                            <strong>Espécie / subespécie: </strong>Paleosuchus trigonatus
+                        </div>
+
+                        <br>
+
+                        <p>
+                            <strong>Sexo: </strong>Feminino<br>
+                            <strong>Tempo no Zoo: </strong>18 anos<br>
+                            <strong>Status de Conservação: </strong>Pouco Preocupante (LC)<br><br>
+                            <img src="../imagens/lista-vermelha/lista-vermelha-iucn-lc.webp" alt="status de conservação"><br><br>
+                            <strong>Habitat natural: </strong>Amazônia e Guianas (América do Sul)
+                        </p>
+                    </div>
+
+                    <div class="fotoAnimal">
+                        <img src="../imagens/animais/jacaze.webp" alt="Foto Jacaré-coroa"> Jacazé em sua lagoa
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-animal">
+                <h3>Jacaré-anão</h3>
+                <p><strong>Nome: </strong>Eliadas | <strong>Idade: </strong>5 anos</p>
+                <button id="botao-jacare-anao" onclick="mostrarInfo('jacare-anao')">Ver Informações</button>
+
+                <div id="info-jacare-anao" class="detalhes" hidden>
+                    <div class="infoAnimal">
+                        <div class="infoBio">
+                            <strong>Reino: </strong>Animalia&emsp;&emsp;&emsp;<strong>Filo: </strong>Chordata&emsp;&emsp;&emsp;
+                            <strong>Classe: </strong>Reptilia<br><strong>Ordem: </strong>Crocodylia&emsp;&emsp;&emsp;
+                            <strong>Família: </strong>Alligatoridae&emsp;&emsp;&emsp;<strong>Gênero: </strong>Paleosuchus<br>
+                            <strong>Espécie / subespécie: </strong>Paleosuchus palpebrosus
+                        </div>
+
+                        <br>
+
+                        <p>
+                            <strong>Sexo: </strong>Masculino<br>
+                            <strong>Tempo no Zoo: </strong>5 anos<br>
+                            <strong>Status de Conservação: </strong>Pouco Preocupante (LC)<br><br>
+                            <img src="../imagens/lista-vermelha/lista-vermelha-iucn-lc.webp" alt="status de conservação"><br><br>
+                            <strong>Habitat natural: </strong>Amazônia, Cerrado e Pantanal (América do Sul)<br>
+                            <strong>Observação: </strong>Possui albinismo
+                        </p>
+                    </div>
+
+                    <div class="fotoAnimal">
+                        <img src="../imagens/animais/eliadas.jpeg" alt="Foto Jacaré-anão"> Eliadas em exibição
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-animal">
+                <h3>Avestruzes-comuns</h3>
+                <p><strong>Nome: </strong>Ronalda (mãe) | <strong>Idade: </strong>30 anos</p>
+                <button id="botao-avestruz-ronalda" onclick="mostrarInfo('avestruz-ronalda')">Ver Informações</button>
+
+                <div id="info-avestruz-ronalda" class="detalhes" hidden>
+                    <div class="infoAnimal">
+                        <div class="infoBio">
+                            <strong>Reino: </strong>Animalia&emsp;&emsp;&emsp;<strong>Filo: </strong>Chordata&emsp;&emsp;&emsp;
+                            <strong>Classe: </strong>Aves<br><strong>Ordem: </strong>Struthioniformes&emsp;&emsp;&emsp;
+                            <strong>Família: </strong>Struthionidae&emsp;&emsp;&emsp;<strong>Gênero: </strong>Struthio<br>
+                            <strong>Espécie / subespécie: </strong>Struthio camelus
+                        </div>
+
+                        <br>
+
+                        <p>
+                            <strong>Parentesco: </strong>Mãe<br>
+                            <strong>Sexo: </strong>Feminino<br>
+                            <strong>Tempo no Zoo: </strong>10 anos<br>
+                            <strong>Status de Conservação: </strong>Pouco Preocupante (LC)<br><br>
+                            <img src="../imagens/lista-vermelha/lista-vermelha-iucn-lc.webp" alt="status de conservação"><br><br>
+                            <strong>Habitat natural: </strong>África (savanas e regiões semiáridas)
+                        </p>
+                    </div>
+
+                    <div class="fotoAnimal">
+                        <img src="../imagens/animais/ronalda.webp" alt="Foto Avestruz-comum Mãe">Ronalda Passeando
+                    </div>
+                </div>
+
+                <br><br><br><div class="separador"></div><br>
+
+                <p><strong>Nome: </strong>Ronaldinho (filho) | <strong>Idade: </strong>9 anos</p>
+                <button id="botao-avestruz-ronaldinho" onclick="mostrarInfo('avestruz-ronaldinho')">Ver Informações</button>
+
+                <div id="info-avestruz-ronaldinho" class="detalhes" hidden>
+                    <div class="infoAnimal">
+                        <div class="infoBio">
+                            <strong>Reino: </strong>Animalia&emsp;&emsp;&emsp;<strong>Filo: </strong>Chordata&emsp;&emsp;&emsp;
+                            <strong>Classe: </strong>Aves<br><strong>Ordem: </strong>Struthioniformes&emsp;&emsp;&emsp;
+                            <strong>Família: </strong>Struthionidae&emsp;&emsp;&emsp;<strong>Gênero: </strong>Struthio<br>
+                            <strong>Espécie / subespécie: </strong>Struthio camelus
+                        </div>
+
+                        <br>
+
+                        <p>
+                            <strong>Parentesco: </strong>Filho<br>
+                            <strong>Sexo: </strong>Masculino<br>
+                            <strong>Tempo no Zoo: </strong>9 anos<br>
+                            <strong>Status de Conservação: </strong>Pouco Preocupante (LC)<br><br>
+                            <img src="../imagens/lista-vermelha/lista-vermelha-iucn-lc.webp" alt="status de conservação"><br><br>
+                            <strong>Habitat natural: </strong>África (savanas e regiões semiáridas)
+                        </p>
+                    </div>
+
+                    <div class="fotoAnimal">
+                        <img src="../imagens/animais/ronaldinho.webp" alt="Foto Avestruz-comum Filhote">Ronaldinho caminhando
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-animal">
+                <h3>Axolotes</h3>
+                <div class="conservacao-axolotes">
+                    <strong>Status de Conservação: </strong>Criticamente em Perigo (CR)<br><br>
+                    <div class="img-conservacao-axolotes">
+                        <img src="../imagens/lista-vermelha/lista-vermelha-iucn-cr.webp" alt="status de conservação"><br><br>
+                    </div>
+                </div>
+
+                <br><br>
+
+                <p><strong>Nome: </strong>Adalberto | <strong>Idade: </strong>3 anos</p>
+                <button id="botao-axolote-adalberto" onclick="mostrarInfo('axolote-adalberto')">Ver Informações</button>
+
+                <div id="info-axolote-adalberto" class="detalhes" hidden>
+                    <div class="infoAnimal">
+                        <div class="infoBio">
+                            <strong>Reino: </strong>Animalia&emsp;&emsp;&emsp;<strong>Filo: </strong>Chordata&emsp;&emsp;&emsp;
+                            <strong>Classe: </strong>Amphibia<br><strong>Ordem: </strong>Caudata&emsp;&emsp;&emsp;
+                            <strong>Família: </strong>Ambystomatidae&emsp;&emsp;&emsp;<strong>Gênero: </strong>Ambystoma<br>
+                            <strong>Espécie / subespécie: </strong>Ambystoma mexicanum
+                        </div>
+
+                        <br>
+
+                        <p>
+                            <strong>Coloração: </strong>Rosa<br>
+                            <strong>Sexo: </strong>Masculino<br>
+                            <strong>Tempo no Zoo: </strong>2 anos<br>
+                            <strong>Habitat natural: </strong>Lago Xochimilco, México
+                        </p>
+                    </div>
+
+                    <div class="fotoAnimal">
+                        <img src="../imagens/animais/adalberto.webp" alt="Foto Axolote Rosa">Adalberto gentilmente sorrindo
+                    </div>
+                </div>
+
+                <br><br><br><div class="separador"></div><br>
+
+                <p><strong>Nome: </strong>Pexe | <strong>Idade: </strong>4 anos</p>
+                <button id="botao-axolote-pexe" onclick="mostrarInfo('axolote-pexe')">Ver Informações</button>
+
+                <div id="info-axolote-pexe" class="detalhes" hidden>
+                    <div class="infoAnimal">
+                        <div class="infoBio">
+                            <strong>Reino: </strong>Animalia&emsp;&emsp;&emsp;<strong>Filo: </strong>Chordata&emsp;&emsp;&emsp;
+                            <strong>Classe: </strong>Amphibia<br><strong>Ordem: </strong>Caudata&emsp;&emsp;&emsp;
+                            <strong>Família: </strong>Ambystomatidae&emsp;&emsp;&emsp;<strong>Gênero: </strong>Ambystoma<br>
+                            <strong>Espécie / subespécie: </strong>Ambystoma mexicanum
+                        </div>
+
+                        <br>
+
+                        <p>
+                            <strong>Coloração: </strong>Preto<br>
+                            <strong>Sexo: </strong>Feminino<br>
+                            <strong>Tempo no Zoo: </strong>2 anos<br>
+                            <strong>Habitat natural: </strong>Lago Xochimilco, México<br>
+                            <strong>Observação: </strong>Possui uma pata quebrada
+                        </p>
+                    </div>
+
+                    <div class="fotoAnimal">
+                        <img src="../imagens/animais/pexe.jpeg" alt="Foto Axolote Pexe">Pexe curtindo a água
+                    </div>
+                </div>
+
+                <br><br><br><div class="separador"></div><br>
+
+                <p><strong>Nome: </strong>Cachalote | <strong>Idade: </strong>7 anos</p>
+                <button id="botao-axolote-cachalote" onclick="mostrarInfo('axolote-cachalote')">Ver Informações</button>
+
+                <div id="info-axolote-cachalote" class="detalhes" hidden>
+                    <div class="infoAnimal">
+                        <div class="infoBio">
+                            <strong>Reino: </strong>Animalia&emsp;&emsp;&emsp;<strong>Filo: </strong>Chordata&emsp;&emsp;&emsp;
+                            <strong>Classe: </strong>Amphibia<br><strong>Ordem: </strong>Caudata&emsp;&emsp;&emsp;
+                            <strong>Família: </strong>Ambystomatidae&emsp;&emsp;&emsp;<strong>Gênero: </strong>Ambystoma<br>
+                            <strong>Espécie / subespécie: </strong>Ambystoma mexicanum
+                        </div>
+
+                        <br>
+
+                        <p>
+                            <strong>Coloração: </strong>Rosa<br>
+                            <strong>Sexo: </strong>Masculino<br>
+                            <strong>Tempo no Zoo: </strong>2 anos<br>
+                            <strong>Habitat natural: </strong>Lago Xochimilco, México<br>
+                            <strong>Observação: </strong>Não possui uma pata
+                        </p>
+                    </div>
+
+                    <div class="fotoAnimal">
+                        <img src="../imagens/animais/cachalote.jpeg" alt="Foto Axolote Cachalote">Cachalote passeando no aquário
+                    </div>
+                </div>
+
+                <br><br><br><div class="separador"></div><br>
+
+                <p><strong>Nome: </strong>Verity | <strong>Idade: </strong>1 anos</p>
+                <button id="botao-axolote-verity" onclick="mostrarInfo('axolote-verity')">Ver Informações</button>
+
+                <div id="info-axolote-verity" class="detalhes" hidden>
+                    <div class="infoAnimal">
+                        <div class="infoBio">
+                            <strong>Reino: </strong>Animalia&emsp;&emsp;&emsp;<strong>Filo: </strong>Chordata&emsp;&emsp;&emsp;
+                            <strong>Classe: </strong>Amphibia<br><strong>Ordem: </strong>Caudata&emsp;&emsp;&emsp;
+                            <strong>Família: </strong>Ambystomatidae&emsp;&emsp;&emsp;<strong>Gênero: </strong>Ambystoma<br>
+                            <strong>Espécie / subespécie: </strong>Ambystoma mexicanum
+                        </div>
+
+                        <br>
+
+                        <p>
+                            <strong>Coloração: </strong>Amarelo<br>
+                            <strong>Sexo: </strong>Feminino<br>
+                            <strong>Tempo no Zoo: </strong>1 anos<br>
+                            <strong>Habitat natural: </strong>Lago Xochimilco, México
+                        </p>
+                    </div>
+
+                    <div class="fotoAnimal">
+                        <img src="../imagens/animais/verity.jpeg" alt="Foto Axolote Verity">Olá, sou eu, é o Verity
+                    </div>
+                </div>
+
+                <br><br><br><div class="separador"></div><br>
+
+                <p><strong>Nome: </strong>Falsity | <strong>Idade: </strong>6 meses</p>
+                <button id="botao-axolote-falsity" onclick="mostrarInfo('axolote-falsity')">Ver Informações</button>
+
+                <div id="info-axolote-falsity" class="detalhes" hidden>
+                    <div class="infoAnimal">
+                        <div class="infoBio">
+                            <strong>Reino: </strong>Animalia&emsp;&emsp;&emsp;<strong>Filo: </strong>Chordata&emsp;&emsp;&emsp;
+                            <strong>Classe: </strong>Amphibia<br><strong>Ordem: </strong>Caudata&emsp;&emsp;&emsp;
+                            <strong>Família: </strong>Ambystomatidae&emsp;&emsp;&emsp;<strong>Gênero: </strong>Ambystoma<br>
+                            <strong>Espécie / subespécie: </strong>Ambystoma mexicanum
+                        </div>
+
+                        <br>
+
+                        <p>
+                            <strong>Coloração: </strong>Azulado<br>
+                            <strong>Sexo: </strong>Masculino<br>
+                            <strong>Tempo no Zoo: </strong>6 meses<br>
+                            <strong>Habitat natural: </strong>Lago Xochimilco, México
+                        </p>
+                    </div>
+
+                    <div class="fotoAnimal">
+                        <img src="../imagens/animais/falsity.jpeg" alt="Foto Axolote Falsity">Falsity, Falsity, Falsity, Falsity, Flasity
+                    </div>
+                </div>
+
+                <br><br>
+            </div>
+        </section>
+        
+        <br><br>
+
+        <section class="inscricao">
+            <h2>Inscreva-se para uma visita!</h2>
+            <p>Clique no botão abaixo e preencha seus dados para agendar uma visita ao nosso Zoológico!</p>
+            <a href="../inscricao/index.html" class="botaoInscricao">Clique Aqui</a><br><br>
+        </section>  
+    </main>
+
+    <br>
+
+    <footer>
+        © 2026 Zoológico Municipal Plínio Marim - IFSP Votuporanga
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

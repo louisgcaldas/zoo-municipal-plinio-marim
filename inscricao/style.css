@@ -1,0 +1,121 @@
+body {
+    background-color: #F4F6F0;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 8px auto 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2D5A27;
+    border-radius: 10px;
+    height: 170px;
+    max-width: 90vw;
+}
+
+#logo-zoo {
+    z-index: 1;
+    max-height: 60%;
+    width: auto;
+    padding: 27px;
+}
+
+#titulo-zoo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+main p {
+    text-align: center;
+    font-weight: bold;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#mensagem {
+    margin: 15px 200px 30px;
+    padding: 15px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+#botaoValidar {
+    background-color: #388e3c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#botaoValidar:hover {
+    background-color: #2e7d32;
+    text-decoration: underline;
+}
+
+#botaoEnviar {
+    background-color: #b5b5b5;
+    color: rgb(83, 83, 83);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#botaoEnviar.ativo {
+    background-color: #388e3c;
+    color: white;
+    cursor: pointer;
+}
+
+#botaoEnviar.ativo:hover {
+    text-decoration: underline;
+    background-color: #2e7d32;
+}
+
+.botaoInicio {
+    background-color: #388e3c;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #2D5A27;
+    text-align: center;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}

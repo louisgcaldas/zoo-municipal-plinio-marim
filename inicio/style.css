@@ -1,0 +1,187 @@
+body {
+    background-color: #F4F6F0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 8px auto 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    background-color: #2D5A27;
+    border-radius: 10px;
+    height: 170px;
+    max-width: 90vw;
+}
+
+#logo-zoo {
+    z-index: 1;
+    max-height: 60%;
+    width: auto;
+    padding: 27px;
+}
+
+#titulo-zoo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+section {
+    border-radius: 10px;
+}
+
+.introducao {
+    background-color: white;
+    padding: 6px 20px;
+    margin-top: 10px;
+}
+
+.introducao p {
+    font-size: medium;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+.animais {
+    background-color: white;
+    padding: 6px 20px;
+}
+
+.card-animal {
+    background-color: #e0f0e0;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #2c5e3b;
+}
+
+.detalhes {
+    display: flex;
+    background-color: white;
+    padding: 6px 20px;
+    border-radius: 10px;
+    margin-top: 14px;
+}
+
+.fotoAnimal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    line-height: 2;
+}
+
+.fotoAnimal img {
+    min-width: 408px;
+    max-width: 408px;
+    border-radius: 6px;
+    margin-top: 23px;
+}
+
+.infoAnimal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.infoBio {
+    text-align: center;
+    line-height: 26px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid #d2d2d2;
+    border-radius: 20px;
+}
+
+.detalhes img {
+    width: 100%;
+    height: auto;
+}
+
+.detalhes[hidden] {
+    display: none;
+}
+
+.card-animal button {
+    background-color: #388e3c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.card-animal button:hover {
+    background-color: #2e7d32;
+    text-decoration: underline;
+}
+
+.conservacao-axolotes {
+    background-color: white;
+    color: rgb(227, 25, 25);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 14px;
+    text-align: center;
+}
+
+.img-conservacao-axolotes {
+    display: flex;
+    justify-content: center;
+}
+
+.separador {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1100px;
+    border-top: 4px dotted gray;
+}
+
+.inscricao {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.botaoInscricao {
+    background-color: #388e3c;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.botaoInscricao:hover {
+    background-color: #2e7d32;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #2D5A27;
+    text-align: center;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
