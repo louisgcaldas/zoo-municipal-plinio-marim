@@ -172,6 +172,13 @@ footer {
         font-size: 1.2rem;
         margin-top: 10px;
     }
+
+    #mensagem {
+        margin: 15px 60px 30px;
+        padding: 15px;
+        border-radius: 4px;
+        font-weight: bold;
+    }
 }
 
 @media (max-width: 425px) {
@@ -190,6 +197,13 @@ footer {
 
     .botaoInicio {
         margin: 0 auto;
+    }
+
+    #mensagem {
+        margin: 15px 50px 30px;
+        padding: 15px;
+        border-radius: 4px;
+        font-weight: bold;
     }
 }
 

@@ -75,6 +75,15 @@ botaoValidar.addEventListener("click", function () {
         return;
     }
 
+    if (termos.checked === false) {
+        mensagem.hidden = false
+        mensagem.textContent = "Erro: Por favor, aceite os termos de conduta antes de!";
+        mensagem.style.backgroundColor = "#f8d7da";
+        mensagem.style.color = "#721c24";
+        mensagem.style.border = "1px solid #f5c6cb";
+        return;
+    }
+
     else {
         mensagem.hidden = false;
         mensagem.style.backgroundColor = "#d4edda";
