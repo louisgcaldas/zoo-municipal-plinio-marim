@@ -1,4 +1,5 @@
 body {
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #F4F6F0;
     margin: 0 auto;
 }
@@ -6,27 +7,26 @@ body {
 header {
     display: flex;
     align-items: center;
-    position: relative;
-    margin: 8px auto 0;
-    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-between;
+    padding: 0 20px;
+    gap: 20px;
     background-color: #2D5A27;
     border-radius: 10px;
     height: 170px;
     max-width: 90vw;
+    margin: 8px auto 0;
 }
 
-#logo-zoo {
-    z-index: 1;
-    max-height: 60%;
-    width: auto;
-    padding: 27px;
+#logo-zoo, .placeholder {
+    height: auto;
+    width: 14vw;
 }
 
 #titulo-zoo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    position: static;
+    text-align: center;
     color: white;
+    font-size: 1.8rem;
 }
 
 main {
@@ -48,4 +48,66 @@ footer {
     color: white;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
+}
+
+@media (max-width: 1024px) {
+    main {
+        margin: 0 8px;
+    }
+
+    #logo-zoo, .placeholder {
+        height: auto;
+        width: 19%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #logo-zoo {
+        height: 70%;
+        width: 16%;
+    }
+
+    #titulo-zoo {
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    header {
+        margin: 8px 8px 0;
+    }
+
+    #logo-zoo {
+        height: 50px;
+        width: auto;
+    }
+
+    .placeholder {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    #logo-zoo {
+        height: 60px;
+        width: auto;
+    }
+
+    .placeholder {
+        display: none;
+    }
+}
+
+@media (max-width: 320px) {
+    #logo-zoo {
+        height: 50px;
+        width: auto;
+    }
 }

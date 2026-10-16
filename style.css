@@ -1,4 +1,5 @@
 body {
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #F4F6F0;
     margin: 0;
 }
@@ -6,32 +7,29 @@ body {
 header {
     display: flex;
     align-items: center;
-    position: relative;
-    margin: 8px auto 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: larger;
+    justify-content: space-between;
+    padding: 0 20px;
+    gap: 20px;
     background-color: #2D5A27;
     border-radius: 10px;
     height: 170px;
     max-width: 90vw;
+    margin: 8px auto 0;
 }
 
-#logo-zoo {
-    z-index: 1;
-    max-height: 60%;
-    width: auto;
-    padding: 27px;
+#logo-zoo, .placeholder {
+    height: auto;
+    width: 14vw;
 }
 
 #titulo-zoo {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    position: static;
+    text-align: center;
     color: white;
+    font-size: 1.8rem;
 }
 
 main {
-    font-family: Arial, Helvetica, sans-serif;
     color: #333333;
     max-width: 1100px;
     margin: 0 auto;
@@ -83,8 +81,8 @@ section {
 }
 
 .fotoAnimal img {
-    min-width: 408px;
-    max-width: 408px;
+    width: 100%;
+    width: 408px;
     border-radius: 6px;
     margin-top: 23px;
 }
@@ -98,8 +96,11 @@ section {
 }
 
 .infoBio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 20px;
     text-align: center;
-    line-height: 26px;
     padding: 10px;
     margin-top: 10px;
     border: 2px solid #d2d2d2;
@@ -122,6 +123,7 @@ section {
     padding: 10px 15px;
     cursor: pointer;
     border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: bold;
 }
@@ -136,13 +138,18 @@ section {
     color: rgb(227, 25, 25);
     padding: 20px;
     border-radius: 10px;
-    margin-top: 14px;
+    margin: 14px auto 0;
     text-align: center;
+    max-width: 853px;
 }
 
 .img-conservacao-axolotes {
     display: flex;
     justify-content: center;
+}
+
+.img-conservacao-axolotes img {
+    width: 90%;
 }
 
 .separador {
@@ -184,4 +191,81 @@ footer {
     color: white;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
+}
+
+@media (max-width: 1024px) {
+    section {
+        margin: 0 8px;
+    }
+
+    #logo-zoo, .placeholder {
+        height: auto;
+        width: 19%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #logo-zoo {
+        height: 70%;
+        width: 16%;
+    }
+
+    #titulo-zoo {
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+
+    .detalhes {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .fotoAnimal {
+        margin-left: 0;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .fotoAnimal img {
+        min-width: unset;
+        max-width: 100%;
+    }
+
+    .infoBio {
+        font-size: 14px;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 425px) {
+    header {
+        margin: 8px 8px 0;
+    }
+
+    #logo-zoo {
+        height: 50px;
+        width: auto;
+    }
+
+    .placeholder {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    #logo-zoo {
+        height: 60px;
+        width: auto;
+    }
+
+    .placeholder {
+        display: none;
+    }
 }
