@@ -4,6 +4,7 @@ const botaoValidar = document.getElementById("botaoValidar");
 const nome = document.getElementById("nome");
 const cpf = document.getElementById("cpf");
 const idade = document.getElementById("idade");
+const telefone = document.getElementById("telefone");
 const termos = document.getElementById("termos");
 const mensagem = document.getElementById("mensagem");
 const botaoEnviar = document.getElementById("botaoEnviar")
@@ -39,6 +40,15 @@ botaoValidar.addEventListener("click", function () {
     if (Number(idade.value) < 0) {
         mensagem.hidden = false
         mensagem.textContent = "Erro: Por favor, preencha com uma idade válida antes de continuar!";
+        mensagem.style.backgroundColor = "#f8d7da";
+        mensagem.style.color = "#721c24";
+        mensagem.style.border = "1px solid #f5c6cb"
+        return;
+    }
+
+    if (telefone.value === "") {
+        mensagem.hidden = false
+        mensagem.textContent = "Erro: Por favor, preencha seu telefone para contato antes de continuar!";
         mensagem.style.backgroundColor = "#f8d7da";
         mensagem.style.color = "#721c24";
         mensagem.style.border = "1px solid #f5c6cb"
